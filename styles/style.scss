@@ -1,0 +1,224 @@
+html,body{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 25px;
+}
+.containermain{
+    height: 100vh;
+    background: whitesmoke;
+    // grid
+    display: grid;
+    grid-template-areas: 
+    "subsection subnav subnav "
+    "subsection  subarticle subaside"
+    "subsection  containerfooter containerfooter";
+    // grid-template-columns: repeat(auto-fit,minmax(250px 700px 1fr));
+    // grid-template-rows: repeat(auto-fit,minmax(60px 1fr 50px));
+     grid-template-columns: 250px 700px 1fr;
+     grid-template-rows: 60px 1fr 50px;   
+    
+}
+
+
+.subsection{
+    grid-area: subsection;
+    background: yellowgreen;    
+    
+   
+}
+.subsection div{
+    display: flex;
+    flex-shrink: 2;
+}
+.subsection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.subsection div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 25px;
+}
+.image1 {
+    background: whitesmoke;
+    height: 200px;
+    width: 200px;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.image2 {
+    background: lightblue;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.image3 {
+    background: lightgray;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.image4 {
+    background: lightpink;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.subnav{ 
+    grid-area: subnav;
+    background: red;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: 25px;
+    // flex-shrink: 1;
+}
+.subnav ul {
+    padding: 0;
+    list-style: none;    
+}
+.subnav a{
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;    
+}
+.subnav li{
+    display: inline;
+}
+.subarticle{
+    grid-area: subarticle;
+    background: yellow;
+    grid-row: 2/3;
+    grid-column: 2/3;    
+}
+.subarticle {
+    display: grid;
+    grid-template-columns: 700px;
+    grid-template-rows: 400px 400px;
+}
+.article1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    // grid row and column is just a refrence for my alignment
+    // grid row and colum has a property that automatically adopt the alignment
+    background: brown;
+    margin: 25px 25px;    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;   
+}
+.article1 p{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.article2{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    // grid row and column is just a refrence for my alignment
+    // grid row and colum has a property that automatically adopt the alignment
+    background: mistyrose;
+    margin: 25px 25px;    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;     
+}
+.article2 p{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.subaside{
+    grid-area: subaside;
+    background: blue;
+}
+.subaside{
+    // grid
+    display: grid;
+    grid-template-columns: 100% ;
+    grid-template-rows: 200px 200px 200px ;
+    display: flex;
+    
+}
+.subaside {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.aside1{   
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background: navajowhite;   
+    height: 200px;
+    width: 250px;
+ }
+.aside2{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background: aquamarine;   
+    height: 200px;
+    width: 250px;    
+}
+.aside3{ 
+    grid-column: 1/2;
+    grid-row: 3/4;
+    background: gray; 
+    height: 200px;
+    width: 250px;         
+}
+.aside1 p{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;  
+}
+.aside2 p{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.aside3 p{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;  
+}
+.subaside div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.containerfooter{
+    grid-area: containerfooter;
+    background: purple;
+}
+.footerarea h3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
